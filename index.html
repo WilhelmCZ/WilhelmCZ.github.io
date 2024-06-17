@@ -125,7 +125,7 @@
             flex: 1 1 100vw;
             padding: 10px;
         }
-        #formulario{
+        #contato{
             background-color: navy;
             color: white;
             display: flex;
@@ -142,6 +142,27 @@
             padding: 10px;
             height: 50px;
         }
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 7px;
+            border: 3px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        form button {
+            background-color: #fff;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 9px;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #ddd;
+        }
     </style>
 </head>
 <body>
@@ -151,8 +172,8 @@
     <nav>
     
     <a href="#home">Home</a>
-    <a href="#sobre">Sobre Nós</a>
-    <a href="#servicos">Servicos</a>
+    <a href="#depoimento">Sobre Nós</a>
+    <a href="#veterinario">Servicos</a>
     <a href="#contato">Contato</a>
     </nav>
 </header> 
@@ -209,15 +230,16 @@
      estimação, como também oferecem serviços de saúde e bem-estar que fazem toda a diferença. Meus pets adoram ir lá,
      e eu confio plenamente na equipe para cuidar deles." - Patrícia</p>
 </section>
-<section id="formulario">
+<section id="contato">
     <form action="">
+        <h2>Entre em Contato:</h2>
         <label for="">Nome:</label>
         <input type="text" name="nome" placeholder="Nome">
         <label for="">Email:</label>
         <input type="text" name="email" placeholder="Email">
         <label for="">Comentario:</label>
         <input type="text" name="comentario" placeholder="Comentario">
-        <input type="submit" value="enviar">
+        <button type="submit" class="btn">Enviar</button>
     </form>
 </section>
 <footer> <p>&copy; Pet Shop 2001</p></footer>
