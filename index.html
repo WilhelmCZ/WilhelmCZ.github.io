@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sportacus</title>
+    <style>
+        *{
+                margin: 0;
+                padding: 0;
+            }
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            flex: 1 1 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            
+
+        
+        }
+        header, main , nav , aside{
+            display: flex;
+        }
+
+        header{
+            flex: 1 1 100vw;
+            align-content: center;
+            justify-content: space-between;
+            height: 100px;
+            background-color: navy;
+        }
+
+        h1{
+            color: white;
+            padding: 30px;
+        }
+
+        
+        nav a {
+            color: white;
+            padding: 40px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: .5s;
+        }
+
+        nav a:hover{
+            background-color: white;
+            color: rgb(28, 27, 27);
+            font-weight: bold;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        main{
+            flex: 1 1 100vw;
+            flex-wrap: wrap;
+            background-color: beige;
+            
+        }
+        #inicio{
+            flex: 1 1 100vw;
+            text-align: center;
+            margin: 40px;
+        }
+        #inicio h2{
+            padding: 20px;
+        }
+        #inicio p{
+            padding-bottom: 20px;
+        }
+        #inicio a{
+            background-color: rgb(28, 27, 27);
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+        }
+        aside{
+            text-align: center;
+            display: flex;
+        }
+        aside h3{
+            padding: 10px 0px 10px 0px;
+        }
+        aside p{
+            padding: 8px 0px 8px 0px;
+        }
+        aside a{
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            width: 130px;
+            font-weight: bold;
+            background-color: rgb(28, 27, 27);
+
+        }
+        h2 {
+         
+        }
+    
+        #banho,#veterinario,#hospedagem{
+            display: flex;
+            padding: 20px;
+            align-items: center;
+        }
+        #banho,#veterinario,#hospedagem{
+            flex-direction: column;
+        }
+        img{
+            height: 150px;
+            width: 250px;
+        }
+        #depoimento{
+            background-color: navy;
+            color: white;
+            padding: 10px;
+        }
+        #dep{
+            background-color: navy;
+            color: white;
+            display: flex;
+            flex: 1 1 100vw;
+            padding: 10px;
+        }
+        #formulario{
+            background-color: navy;
+            color: white;
+            display: flex;
+            flex: 1 1 100vw;
+            padding: 20px;
+        }
+        footer{
+            background-color: navy;
+            color: white;
+            display: flex; 
+            flex: 1 1 100vw;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form name="petpanel" action="" method="get"></form>
+    <header>
+        <h1>Pet Shop</h1>
+    <nav>
+    
+    <a href="#home">Home</a>
+    <a href="#sobre">Sobre Nós</a>
+    <a href="#servicos">Servicos</a>
+    <a href="#contato">Contato</a>
+    </nav>
+</header> 
+
+<main>
+    <div id="inicio">
+    <h2>Bem-Vindo Ao Nosso Pet Shop</h2>
+    <p>Aqui Você Encontra Tudo que seu Pet Precisa.</p>
+    <a href="#">Conheça Nossos Serviços</a>
+    </div>
+
+    <h2>Nossos Serviços</h2>
+
+    <aside>
+<div id="banho">
+    
+    <img src="img/DogBanho.jpg" alt="Dog Banho"> 
+    <h3>Banho e Tosa</h3>
+    <p>Deixe seu Pet limpo e cheiroso com o nosso serviço completo de banho e tosa. Inclui banho com produtos de qualidade, tosa
+     conforme o padrão da raça e cuidados especiais com unhas e orelhas </p>
+    <p><strong>Duração:</strong> 1 Hora</p>
+    <p><strong>Preço:</strong> A Partir de R$50,00</p> 
+    <a href="#">Agendar Agora</a> 
+</div>
+
+<div id="veterinario">
+    <img src="img/Dogvac.png" alt="Dog morde">
+    <h3>Consultas Veterinárias</h3>
+    <p>Garanta a Saúde e bemm-estar do seu pet com nossas consultas Veterinárias. Nossos Profissionais altamente qualificados 
+        estão prontos para oferecer o melhor atendimento e cuidado para o seu animal.</p>
+    <p><strong>Duração:</strong> 30 minutos</p>
+    <p><strong>Preço:</strong>R$80,00 Por Consulta</p> 
+    <a href="#" >Agendar Agora</a> 
+</div>
+
+<div id="hospedagem">
+    <img src="img/DogHosp.jpg" alt="Dog hospedagem">
+    <h3>Hospedagem</h3>
+    <p>Deixe seu pet sob nossos cuidados enquanto você viaja com tranquilidade. Nossa hospedagem oferece ambientes
+     espaçosos, confortáveis e seguros para seu pet se sentir em casa</p>
+    <p><strong>Duração:</strong> Por Dia</p>
+    <p><strong>Preço:</strong> A Partir de R$60,00 por dia</p>
+    <a href="#" >Agendar Agora</a> 
+</div>
+</aside>
+</main>
+<h3 id ="dep">Depoimento de Clientes</h3>
+<section id="depoimento">
+    <p>"A PetShop é o lugar perfeito para quem procura um ambiente seguro e confiável para deixar o seu animalzinho.
+     Sempre que viajo, deixo o meu cãozinho lá e sei que ele está em boas mãos. Eles têm espaços amplos e confortáveis, e os 
+     funcionários são muito dedicados e carinhosos." - Carlos</p>
+
+    <p>"Não consigo imaginar minha vida sem a PetShop! Eles não só fornecem os melhores produtos para os meus animais de
+     estimação, como também oferecem serviços de saúde e bem-estar que fazem toda a diferença. Meus pets adoram ir lá,
+     e eu confio plenamente na equipe para cuidar deles." - Patrícia</p>
+</section>
+<section id="formulario">
+    <form action="">
+        <label for="">Nome:</label>
+        <input type="text" name="nome" placeholder="Nome">
+        <label for="">Email:</label>
+        <input type="text" name="email" placeholder="Email">
+        <label for="">Comentario:</label>
+        <input type="text" name="comentario" placeholder="Comentario">
+        <input type="submit" value="enviar">
+    </form>
+</section>
+<footer> <p>&copy; Pet Shop 2001</p></footer>
+
+</body>
+</html>
